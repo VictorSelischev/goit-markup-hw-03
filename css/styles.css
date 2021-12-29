@@ -176,6 +176,10 @@ ul {
   text-align: center;
 }
 
+.no-gap {
+  display: block;
+}
+
 /* Секция Наша команда */
 .team-subtitle {
   font-weight: 500;
