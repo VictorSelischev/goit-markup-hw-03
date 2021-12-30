@@ -66,6 +66,10 @@ ul {
   list-style: none;
 }
 
+.site-nav {
+  display: flex;
+}
+
 .site-nav-link {
   text-decoration: none;
   color: var(--text-color);
