@@ -38,7 +38,7 @@ h2,
 h3,
 p,
 ul,
-a {
+li {
   margin: 0;
   padding: 0;
 }
@@ -63,7 +63,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  margin: 25px 0;
+  display: inline-block;
+  padding: 25px 0;
   margin-right: 90px;
 }
 
@@ -87,12 +88,12 @@ header {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -100,7 +101,28 @@ header {
 .site-nav {
   display: flex;
   width: 294px;
-  justify-content: space-between;
+  margin-right: 330px;
+}
+
+.site-nav-item,
+.contacts-item {
+  margin: 0 25px;
+}
+
+.site-nav-item:first-child,
+.contacts-item:first-child {
+  margin-left: 0;
+}
+
+.site-nav-item:last-child,
+.contacts-item:last-child {
+  margin-right: 0;
+}
+
+.site-nav-link,
+.contacts-link {
+  display: block;
+  padding: 32px 0;
 }
 
 .site-nav-link {
@@ -120,7 +142,6 @@ header {
 .contacts {
   display: flex;
   width: 307px;
-  justify-content: space-between;
 }
 
 .contacts-link {
@@ -138,9 +159,19 @@ header {
 }
 
 /* Оформление подвала сайта footer */
-.footer,
+footer,
 .section-hero {
   background-color: var(--background-color-section);
+}
+
+footer {
+  padding: 35px 0;
+}
+
+.section-hero,
+.section-function,
+.section-development {
+  margin-bottom: 95px;
 }
 
 .address-link {
@@ -150,12 +181,25 @@ header {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  display: block;
+}
+
+.address-item {
+  margin-bottom: 10px;
+}
+
+.address-item:last-child {
+  margin-bottom: 0;
 }
 
 .mail,
 .phone {
-  text-decoration: none;
   color: var(--color-section-text-two);
+}
+
+address {
+  padding-bottom: 25px;
 }
 
 /* Оформление секции Hero */
@@ -190,8 +234,18 @@ header {
 
 /* Оформление секции преимущества */
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .function-subtitle {
