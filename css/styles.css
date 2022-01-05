@@ -285,7 +285,6 @@ address {
 .development {
   display: flex;
   justify-content: space-between;
-  outline: 2px solid tomato;
 }
 
 .development-title,
@@ -309,10 +308,16 @@ address {
   letter-spacing: 0.03em;
 }
 
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-item {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .team-text {
@@ -327,6 +332,8 @@ address {
 }
 
 /* Интерактивная секция кнопок портфолио */
+
+outline: 2px solid tomato;
 
 .filter-button {
   padding: 6px 22px;
