@@ -102,19 +102,10 @@ header {
   width: 294px;
 }
 
-.site-nav-item,
-.contacts-item {
-  margin: 0 25px;
-}
-
-.site-nav-item:first-child,
-.contacts-item:first-child {
-  margin-left: 0;
-}
-
-.site-nav-item:last-child,
-.contacts-item:last-child {
-  margin-right: 0;
+.site-nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+  outline: 2px solid tomato;
 }
 
 .site-nav-link,
