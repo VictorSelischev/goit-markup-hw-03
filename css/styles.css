@@ -251,6 +251,18 @@ address {
   overflow: hidden;
 }
 
+.function {
+  display: flex;
+}
+
+.function-item {
+  width: 270px;
+}
+
+.function-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .function-subtitle {
   margin-bottom: 10px;
 
@@ -261,7 +273,6 @@ address {
   text-transform: uppercase;
 }
 
-/* Секция преимущества */
 .function-text {
   color: var(--text-color-two);
   font-size: 14px;
@@ -280,6 +291,8 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+
+  outline: 2px solid tomato;
 }
 
 /* Секция Наша команда */
