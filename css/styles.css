@@ -280,7 +280,13 @@ address {
   letter-spacing: 0.03em;
 }
 
-/* Секция услуги компании */
+/* Секция Услуги компании */
+
+.development {
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid tomato;
+}
 
 .development-title,
 .team-title {
@@ -291,8 +297,6 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-
-  outline: 2px solid tomato;
 }
 
 /* Секция Наша команда */
