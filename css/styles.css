@@ -333,8 +333,6 @@ address {
 
 /* Интерактивная секция кнопок портфолио */
 
-outline: 2px solid tomato;
-
 .filter-button {
   padding: 6px 22px;
   border-radius: 4px;
@@ -357,12 +355,31 @@ outline: 2px solid tomato;
 }
 
 .filter {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Часть секции Портфолио */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-item {
+  margin-right: 30px;
+
   background-color: var(--color-white);
   border: 1px solid #eeeeee;
+  width: 370px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-link {
