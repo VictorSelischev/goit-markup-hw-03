@@ -371,15 +371,20 @@ address {
 }
 
 .portfolio-item {
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 
   background-color: var(--color-white);
-  border: 1px solid #eeeeee;
-  width: 370px;
 }
 
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-link {
