@@ -23,6 +23,7 @@
   --color-section-text-two: rgba(255, 255, 255, 0.6);
   --button-filter-color: #f5f4fa;
   --button-filter-color-hover: #188ce8;
+  --color-border: #eeeeee;
 }
 
 body {
@@ -80,7 +81,7 @@ img {
   list-style: none;
 }
 
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -93,8 +94,6 @@ header {
 .page-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 .site-nav {
@@ -147,10 +146,16 @@ header {
 }
 
 /* Оформление подвала сайта footer */
-footer {
-  padding: 35px 0;
+.footer {
+  padding: 60px 0;
 
   background-color: var(--background-color-section);
+}
+
+.footer-logo {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .address-link {
@@ -175,10 +180,6 @@ footer {
 .mail,
 .phone {
   color: var(--color-section-text-two);
-}
-
-address {
-  padding-bottom: 25px;
 }
 
 /* Оформление секции Hero */
@@ -233,10 +234,6 @@ address {
   padding: 95px 0;
 }
 
-.section.no-padding-top {
-  padding-top: 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -282,9 +279,16 @@ address {
 
 /* Секция Услуги компании */
 
+.no-padding-top {
+  padding-top: 0;
+}
+
 .development {
   display: flex;
-  justify-content: space-between;
+}
+
+.development-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .development-title,
@@ -299,6 +303,11 @@ address {
 }
 
 /* Секция Наша команда */
+
+.fon-team {
+  background: var(--button-filter-color);
+}
+
 .team-subtitle {
   margin-bottom: 10px;
 
@@ -310,14 +319,18 @@ address {
 
 .team {
   display: flex;
-  justify-content: space-between;
 }
 
 .team-item {
+  background-color: #fff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-text {
@@ -374,7 +387,6 @@ address {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 
   background-color: var(--color-white);
 }
@@ -394,7 +406,10 @@ address {
 }
 
 .portfolio-text-box {
-  padding: 20px 0;
+  padding: 20px 24px;
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .portfolio-title {
